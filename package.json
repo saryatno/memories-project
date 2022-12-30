@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "keywords": [],
   "author": "Saryatno",
@@ -16,6 +17,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.8.2",
-    "nodemon": "^2.0.20"
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.1.0"
   }
 }
